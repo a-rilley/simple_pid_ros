@@ -1,5 +1,5 @@
 # simple_pid_ros
-## A Simple PID Controller for ROS
+## A Simple PID Controller for Robot Operating System (ROS)
 This program was written to easily publish and subscribe to ROS topics relevant to PID control. This controller has been used for robotics applications and can be used to control multiple processes by running multiple instances (nodes) of it in the launch file.
 
 ## simple_pid.launch
