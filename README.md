@@ -1,8 +1,8 @@
 # simple_pid_ros
-##A simple PID Controller for ROS
+## A simple PID Controller for ROS
 This program was written to easily publish and subscribe to topics relevant to PID control.
 
-# simple_pid.launch
+## simple_pid.launch
 Use this file to:
   - Set proportional gain (kp), integral gain (ki), and derivative gain (kd) values.
   - Set maximum (uMax) and minimum (uMin) control values. Example: Min and max servo position.
