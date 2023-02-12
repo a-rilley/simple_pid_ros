@@ -1,6 +1,6 @@
 # simple_pid_ros
 ## A simple PID Controller for ROS
-This program was written to easily publish and subscribe to topics relevant to PID control.
+This program was written to easily publish and subscribe to ROS topics relevant to PID control. This controller has been used for robotics applications and can be used to control multiple processes by running multiple instances (nodes) of it in the launch file.
 
 ## simple_pid.launch
 Use this file to:
@@ -8,9 +8,9 @@ Use this file to:
   - Set maximum (uMax) and minimum (uMin) control values. Example: Min and max servo position.
   - Set your setpoint timeout if desired. Leave as -1.0 for no timeout/reset.
   - Map your topics without having to edit the .cpp file.
-      - Setpoint: Desired value.
-      - Process Variable: Input value to compare against desired value.
-      - Control Variable: Output or computed value. 
+      - Setpoint (SP): Input value / desired value.
+      - Process Variable (PV): Control value to compare against desired value.
+      - Control Variable (u): Output or computed value. 
 
 ```
 <launch>
@@ -33,8 +33,8 @@ A PID controller is used to provide continuous modulated control in feedback loo
 ![alt text](https://plcynergy.com/wp-content/uploads/2021/01/PID-controller-1024x329.jpg)
 
 PID:
-  - P is for proportional control.
-  - I is for integral control.
-  - D is for derivative control. 
+  - P is for proportional control. Proportional to the difference between the desired setpoint and the process variable ( SP - PV ).
+  - I is for integral control. Integrates past values of proportional errors over time.
+  - D is for derivative control. Estimates the future values of the proportional error based its current rate of change. 
 
 A PID controller continuously calculates the difference between a desired setpoint and a measured process variable as an error value. A correction is then applied to the process/plant based on the sum of proportional, integral, and derivative control values. 
