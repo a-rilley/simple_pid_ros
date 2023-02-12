@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="simple_pid_ros" type="simple_pid" name="simple_pid" output="screen" >
+      <param name="kp" value="0.3" />
+      <param name="ki" value="0.05" />
+      <param name="kd" value="0.01" />
+      <param name="uMax" value="3.14159265358979323846" />
+      <param name="uMin" value="-3.14159265358979323846" />
+      <param name="setpoint_timeout_" value="-1.0" />
+      <remap from="setpoint_topic_" to="setpoint_topic_" />
+      <remap from="process_variable_topic_" to="process_variable_topic_" />
+      <remap from="pid_control_topic" to="pid_control_topic" />
+     </node>
+</launch>
