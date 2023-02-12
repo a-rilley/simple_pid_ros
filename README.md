@@ -11,7 +11,7 @@ Use this file to:
       - Setpoint (SP): Input value / desired value.
       - Process Variable (PV): Control value to compare against desired value.
       - Control Variable (u): Output or computed value.
-  - If you wish to run multiple PID controllers, copy/paste <node>...</node> then change the "name" of each node (example: simple_pid1, simple_pid2, etc).  
+  - If you wish to run multiple PID controllers, copy/paste node then change the "name" of each node (example: simple_pid1, simple_pid2, etc) and assign the appropriate topics to each node.  
 
 ```
 <launch>
