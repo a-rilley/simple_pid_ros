@@ -29,7 +29,8 @@ Use this file to:
 </launch>
 ```
 ## What is a PID Controller? 
-A PID controller is used to provide continuous modulated control in feedback loop control systems.  
+A PID controller is used to provide continuous modulated control in feedback loop control systems. A PID controller continuously calculates the difference between a desired setpoint and a measured process variable as an error value. A correction is then applied to the process/plant based on the sum of proportional, integral, and derivative control values. 
+
 
 ![alt text](https://plcynergy.com/wp-content/uploads/2021/01/PID-controller-1024x329.jpg)
 
@@ -37,5 +38,3 @@ PID:
   - P is for proportional control. Proportional to the difference between the desired setpoint and the process variable ( SP - PV ).
   - I is for integral control. Integrates past values of proportional errors over time.
   - D is for derivative control. Estimates the future values of the proportional error based its current rate of change. 
-
-A PID controller continuously calculates the difference between a desired setpoint and a measured process variable as an error value. A correction is then applied to the process/plant based on the sum of proportional, integral, and derivative control values. 
