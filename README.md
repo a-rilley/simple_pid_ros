@@ -37,4 +37,4 @@ A PID controller is used to provide continuous modulated control in feedback loo
 PID:
   - P is for proportional control. Proportional to the difference between the desired setpoint and the process variable ( SP - PV ).
   - I is for integral control. Integrates past values of proportional errors over time.
-  - D is for derivative control. Estimates the future values of the proportional error based its current rate of change. 
+  - D is for derivative control. Estimates the future values of the proportional error based on its current rate of change. 
